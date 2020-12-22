@@ -22,23 +22,24 @@ header {
   padding: 1em;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 1100px;
-  font-family: 'Roboto', sans-serif;
-  padding-bottom: 20px;
-}
 
 .col {
   display: block;
-  margin: 20px 10px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  margin: auto;
   max-width: 100%;
-  height: 250px;
-  color: white;
-  text-align: center;
-  letter-spacing: 1px;
-  padding-top: 5px;
+  margin-bottom: 20px;
 }
+
+.container {
+  width: 100%;
+  padding-bottom: 1.5em;
+  text-align: center;
+}
+
 
 ul {
   list-style: none;
@@ -55,9 +56,11 @@ a {
 p {
 color: #000;
 font-family: 'Roboto', sans-serif;
-letter-spacing: .05em;
-
+text-align: center;
+text-align: center;
+padding-bottom: 5px;
 }
+
 
 .email-link {
   text-transform: lowercase;
@@ -74,34 +77,58 @@ nav {
 }
 
 footer {
-  position: absolute;
-  width: 100%;
+  /* position: absolute;
   height: 100px;
-  padding: 20px;
+  padding: 20px; */
   background-color: #fff;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  width: 100% auto;
+  text-decoration: none;
+  text-align: center;
+  font-size: .8em;
 }
 
-h2 {
+.more-info {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1em;
+  text-align: center;
+
+}
+
+/* h2 {
   height: 12px;
   line-height: 12px;
-}
+} */
 
 .footer-nav {
-  text-align: right;
+  display: inline-block;
+  text-align: center;
+  font-size: .8em;
+  width: auto;
+  padding: 0;
+  margin: 0;
 }
 
 li {
-  display: inline-block;
+  display: block;
   margin-right: 20px;
 }
 
-.top, .footer-nav li:last-child {
+/* .top, .footer-nav li:last-child {
   margin-right: 0;
+} */
+
+.top {
+  float: right;
 }
 
 .full {
   display: none;
 }
+
 p {
 	font-size: .95em;
 	margin-bottom: 1.8em;
@@ -114,6 +141,15 @@ a {
   margin-top: 0;
 }
 
+h1,
+h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+h3 {
+  text-align: center;
+}
 
 a {
 	text-decoration: none;
@@ -139,6 +175,8 @@ img {
 .headline {
  margin-left: 0;
  text-align: left;
+ font-size: 17px;
+line-height: 1.5em;
 }
 
 
@@ -161,7 +199,7 @@ img {
 
 
 .main-header {
-  text-align: right;
+  text-align: center;
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
 	background: rgb(233, 233, 233);
@@ -174,8 +212,8 @@ img {
 
 .footer-name {
   float: left;
-  margin: 0;
-
+  font-weight: bold;
+  display: inline;
 }
 
 .footer-nav {
@@ -185,18 +223,6 @@ img {
   margin: 0;
   padding: 0px;
   display: inline;
-
-}
-
-.col {
-  display: block;
-  margin: 20px 10px;
-  max-width: 100%;
-  height: 250px;
-  color: white;
-  text-align: center;
-  letter-spacing: 1px;
-  padding: 1em;
 }
 
 
@@ -212,15 +238,24 @@ img {
 
 .contact {
   text-align: center;
+  /* padding-top: 3em;
+  padding-bottom: 1em; */
+  /* display: none; */
 }
 
 .contact-info {
   text-align: center;
-}
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  width: auto;
+  text-decoration: none;
+  text-align: center;
+  font-size: .8em;
+  }
 
 
  .profile {
-  max-width: %;
   margin-top: 1em;
   margin-bottom: 1em;
  }
@@ -245,7 +280,7 @@ img {
   .full {
     display: inline-block;
   }
-}
+
     
     .main-nav li {
       background: none;
@@ -257,25 +292,28 @@ img {
       float: right;
     }
   
-    .clearfix::after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-  
-  
     .top {
       display: none;
-    }
+  }
+  
+  .container {
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 1.5em;
+    text-align: center;
+  }
 
-  
-  
-    .col {
-      float: left;
-      width: calc(50% - 20px);
-      margin-bottom: 0;
-  
+  .col {
+    float: left;
+    width: 50%;
+    text-align: center;
+  }
 
+
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
   }
 
     /* ----  Desktop  ---- */
@@ -290,24 +328,35 @@ img {
     }
     
     .intro {
-      padding-top: 2em;
+      padding-top: 1em;
     }
-  
   
     .profile {
       width: 400px;
-      margin-top: 1.25em;
+      margin-top: -3em;
       float: right;
     }
    
     .main-nav {
       float: right;
+      font-size: 10px;
+      padding: 0 0.5px 0 0;
+    }
+
+    .col 
+      float: left;
+      width: 33.33%;
+      text-align: center;
     }
     
-    .col {
-       width: calc(33.333% - 20px);
-    }
-    
-  
-  }
+    .container {
+      width: 95%;
+      max-width: 1150px;
+      }
+
+      .clearfix::after {
+        content: " ";
+        display: table;
+        clear: both;
+      }
   
