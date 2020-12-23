@@ -57,7 +57,6 @@ p {
 color: #000;
 font-family: 'Roboto', sans-serif;
 text-align: center;
-text-align: center;
 padding-bottom: 5px;
 }
 
@@ -84,10 +83,11 @@ footer {
   padding: 0;
   margin: 0;
   display: inline-block;
-  width: 100% auto;
+  width: 100%;
   text-decoration: none;
   text-align: center;
   font-size: .8em;
+  padding: .5em;
 }
 
 .more-info {
@@ -114,7 +114,6 @@ footer {
 
 li {
   display: block;
-  margin-right: 20px;
 }
 
 /* .top, .footer-nav li:last-child {
@@ -174,9 +173,10 @@ img {
 
 .headline {
  margin-left: 0;
- text-align: left;
+ text-align: center;
  font-size: 17px;
 line-height: 1.5em;
+padding: .5em;
 }
 
 
@@ -260,10 +260,10 @@ line-height: 1.5em;
   margin-bottom: 1em;
  }
 
- .headline {
+ /* .headline {
   margin-left: 0;
   text-align: left;
-}
+} */
 
   /* ================================= 
     Media Queries
@@ -285,11 +285,14 @@ line-height: 1.5em;
     .main-nav li {
       background: none;
       display: inline;
+      margin-right: 1em;
+      margin-left: 1em;
     }
   
     .profile {
       width: 40%;
       float: right;
+      margin: 40px;
     }
   
     .top {
@@ -307,6 +310,8 @@ line-height: 1.5em;
     float: left;
     width: 50%;
     text-align: center;
+    padding: 1em;
+    min-height: 400px;
   }
 
 
@@ -315,6 +320,8 @@ line-height: 1.5em;
     display: table;
     clear: both;
   }
+
+}
 
     /* ----  Desktop  ---- */
 
@@ -327,14 +334,16 @@ line-height: 1.5em;
       display: inline;
     }
     
-    .intro {
-      padding-top: 1em;
+    .headline {
+      margin-left: 1em;
+      
     }
   
     .profile {
       width: 400px;
       margin-top: -3em;
       float: right;
+      min-height: 50px
     }
    
     .main-nav {
@@ -343,7 +352,7 @@ line-height: 1.5em;
       padding: 0 0.5px 0 0;
     }
 
-    .col 
+    .col {
       float: left;
       width: 33.33%;
       text-align: center;
@@ -359,4 +368,5 @@ line-height: 1.5em;
         display: table;
         clear: both;
       }
-  
+
+    }
